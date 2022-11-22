@@ -1,0 +1,19 @@
+.contact-paper {
+    margin: 10px
+}
+
+a {
+    text-decoration: none;
+}
+
+#head-shot {
+    max-width: 8rem; 
+    max-height: 8rem; 
+    border-radius: 75%; 
+    margin-top: 2%;
+    border: 5px solid white;
+}
+
+h4 {
+    padding: 5px;
+}
