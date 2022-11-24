@@ -8,20 +8,25 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import EmailIcon from '@mui/icons-material/Email';
 import { Paper } from '@mui/material';
 
-// function youtubeRedirect() {
-//     window.location.replace("www.youtube.com/@tfxcShoes");
-// }
+const MailTo = ({ email, children }) => {
+    return <a href={`mailto:${email}`}>{children}</a>
+}
+
 
 class Contact extends Component {
     render(){
         return(
-            <section id="contact" style={{textAlign: "center"}}>
-            <div>
-                <h1>TF XC Shoes</h1>
-            </div>
-            <img src={"https://tfxcshoes.com/img/tfxc-logo2021%20copy.png"} id="head-shot" />
-            {/* <img src={"https://cmumavericks.com/images/2017/8/21//Graf_HS.jpg?width=300"} id="head-shot" /> */}
-            <Paper elevation={3} className="contact-paper">                
+        <section id="contact" style={{textAlign: "center"}}>
+            <Paper elevation={3} className="contact-paper" style={{padding: "10px"}}>               
+            {/* </Paper> */}
+            <a href="https://www.tfxcshoes.com" target="_blank">
+            <img src={"https://tfxcshoes.com/img/tfxc-logo2021%20copy.png"} id="head-shot" />   
+            </a>
+            <h1>TF XC Shoes</h1>
+            </Paper>         
+            {/* <Paper className="contact-paper" style={{backgroundColor: "slategrey", padding: "10px"}}>                      
+            </Paper> */}
+            <Paper elevation={3} className="contact-paper" style={{marginTop: "20px"}}>                
                 <PersonIcon fontSize="large"></PersonIcon>                
                 <h4>Blake Graf</h4>            
             </Paper>
@@ -37,10 +42,12 @@ class Contact extends Component {
                 <h4 style={{textDecoration: "none"}}>YouTube.com/@tfxcShoes</h4>                
             </Paper>
             </a>
-            <Paper elevation={3} className="contact-paper">
-                <EmailIcon fontSize="large"></EmailIcon>            
-                <h4>tfxcshoes@gmail.com</h4>
-            </Paper>
+            <MailTo email="tfxcshoes@gmail.com">   
+                <Paper elevation={3} className="contact-paper">
+                    <EmailIcon fontSize="large"></EmailIcon>                   
+                    <h4>tfxcshoes@gmail.com</h4>                
+                </Paper>
+            </MailTo>
         </section>
         )
     }
