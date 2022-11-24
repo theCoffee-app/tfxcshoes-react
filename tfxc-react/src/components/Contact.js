@@ -19,8 +19,8 @@ class Contact extends Component {
         <section id="contact" style={{textAlign: "center"}}>
             <Paper elevation={3} className="contact-paper" style={{padding: "10px"}}>               
             {/* </Paper> */}
-            <a href="https://www.tfxcshoes.com" target="_blank">
-            <img src={"https://tfxcshoes.com/img/tfxc-logo2021%20copy.png"} id="head-shot" />   
+            <a href="https://www.tfxcshoes.com" target="_blank" rel="noreferrer">
+            <img src={"https://tfxcshoes.com/img/tfxc-logo2021%20copy.png"} id="head-shot" alt="tfxc-logo"/>   
             </a>
             <h1>TF XC Shoes</h1>
             </Paper>         
@@ -30,13 +30,13 @@ class Contact extends Component {
                 <PersonIcon fontSize="large"></PersonIcon>                
                 <h4>Blake Graf</h4>            
             </Paper>
-            <a href="https://www.instagram.com/tfxcshoes/" target="_blank">
+            <a href="https://www.instagram.com/tfxcshoes/" target="_blank" rel="noreferrer">
             <Paper elevation={3} className="contact-paper">
                 <InstagramIcon fontSize="large"></InstagramIcon>                
                <h4>@tfxcshoes</h4>
             </Paper>
             </a>
-            <a href="https://www.youtube.com/@tfxcShoes" target="_blank">
+            <a href="https://www.youtube.com/@tfxcShoes" target="_blank" rel="noreferrer">
             <Paper elevation={3} className="contact-paper">                
                 <YouTubeIcon fontSize="large"></YouTubeIcon>                
                 <h4 style={{textDecoration: "none"}}>YouTube.com/@tfxcShoes</h4>                
